@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio Website</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/a45d1ffd0c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="conatiner">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi,I'm <span>Nikita</span><br> Dalla From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------about-------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="image1.jpg">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hi! I'm Nikita, a Web Developer based in Charkhi Dadri,Haryana.I currently pursuing my Btech degree in Central University of Haryana,Mahendergarh. My passion lies in creating Websites, and I take pride in delivering high-quality work that meets the needs of my clients.</p>
+                    <div class="tab-titles">
+
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Develop user-friendly website</li>
+                            <li><span>C Language</span><br>intermediate at c language</li>
+                            <li><span>C++ Language</span><br>Beginner at cpp language</li>
+                            <li><span>DSA</span><br>Beginner in Data Structure and Algorithm</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Btech</span><br>Currently pursuing my degree computer science & engineering in third year at  Central University of Haryana</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------My Services--------- -->
+
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list ">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>Crafting visually appealing and user-friendly websites tailored to your brand and audience. Whether you need a simple landing page or a complex e-commerce site, I deliver responsive and SEO-optimized solutions.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-c"></i>
+                    <h2>C & Cpp</h2>
+                    <p> I specialize in providing comprehensive C and C++ development services, tailored to meet the unique needs of each client. </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div> 
+                    <i class="fa-solid fa-database"></i>
+                    <h2>DSA </h2>
+                    <p> I specialize in guiding beginners through the fundamentals of Data Structures and Algorithms (DSA).</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- ----------------My Work------------------- -->
+
+      <div id="work">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work1.png">
+                    <div class="layer">
+                        <h3>amazon website clone</h3>
+                        <p>I make a amazon clone to test my knowledge in html and css</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work2.png">
+                    <div class="layer">
+                        <h3>portfolio Website</h3>
+                        <p>Welcome to my portfolio! Here, you'll find a collection of my best work across various disciplines including web design</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work3.png">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>I developed a user-friendly calculator application designed to handle basic arithmetic operations with precision and ease</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div> 
+            <a href="#" class="btn">See More</a>
+        </div>
+      </div>
+
+      <!-- -----------Resume--------- -->
+
+      <div id="resume">
+        <div class="container">
+            <h1 class="sub-title">My Resume</h1> 
+            <div class="resume-list">
+                <div>
+                    <h3>You can download my resume from  Here-> <span><a href="Resume.pdf" download><i class="fa-solid fa-file"></i></a></span></h3>
+                
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- -------------contact------------ -->
+
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left"> 
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>nikitadalla150904@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9728090721</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/nikita-dalla-85b73727a/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61561639970752"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/nikita__dalla/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://x.com/nikita__dalla"><i class="fa-brands fa-square-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name"  placeholder="Your Name" autocomplete="off" required>
+                        <input type="email" name="Email" placeholder="Your Email" autocomplete="off" required>
+                        <textarea  type="feedback" name="Message" rows="6" placeholder="Your Message" autocomplete="off"></textarea>
+                        <button type="submit" class="btn btn2" autocomplete="off">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Nikita Dalla. Made with <i class="fa-solid fa-heart"></i> </p>
+      </div>
+
+    <script>
+
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+                }
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
